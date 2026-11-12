@@ -1,0 +1,436 @@
+{
+  "kind": "calibration",
+  "created_at": "2026-10-27T17:34:13.366Z",
+  "harness": "evlab 0.2.0",
+  "labels_path": "labels/claude_provisional_2026-10-27.jsonl",
+  "labels_sha256": "10327aadcb0188c0e223eb24362483a5a98577736c13d3b671b8c2398fe10894",
+  "n_labels": 189,
+  "labellers": [
+    "claude-ai-provisional"
+  ],
+  "judges": [
+    "openrouter:openai/gpt-6-luna",
+    "openrouter:google/gemini-3.8-flash"
+  ],
+  "rubric_id": "judge_rubric_v1",
+  "rubric_sha256": "98449afa9b871b9054e75b8e374e01ee0276ed6529eca4fb738d893b6f8fb561",
+  "judgment_ids": [
+    "sonnet55_cal_2026-10-27/openrouter-openai-gpt-6-luna+openrouter-google-gemini-3.8-flash__judge_rubric_v1",
+    "llama_cal_2026-10-27/luna+gemini__rubric_v1__rejudge"
+  ],
+  "gate": {
+    "kappa": 0.8,
+    "min_n": 20,
+    "min_coverage": 0.8
+  },
+  "areas": {
+    "agent_scope": {
+      "n_labelled": 33,
+      "coverage": 0.9393939393939394,
+      "panel": {
+        "n": 31,
+        "kappa": 0.0,
+        "kappa_ci95": [
+          0.0,
+          1.0
+        ],
+        "percent_agree": 0.967741935483871,
+        "fail_recall": null,
+        "fail_precision": 0.0
+      },
+      "heuristic": {
+        "n": 33,
+        "kappa": -0.1197604790419159,
+        "kappa_ci95": [
+          -0.2874743326488706,
+          0.0
+        ],
+        "percent_agree": 0.48484848484848486,
+        "fail_recall": null,
+        "fail_precision": null
+      },
+      "judges": {
+        "openrouter:openai/gpt-6-luna": {
+          "n": 33,
+          "kappa": 0.22656249999999928,
+          "kappa_ci95": [
+            -0.03125000000000065,
+            1.0
+          ],
+          "percent_agree": 0.9090909090909091,
+          "fail_recall": null,
+          "fail_precision": 0.0
+        },
+        "openrouter:google/gemini-3.8-flash": {
+          "n": 33,
+          "kappa": 0.47619047619047644,
+          "kappa_ci95": [
+            -0.02325581395348861,
+            1.0
+          ],
+          "percent_agree": 0.9393939393939394,
+          "fail_recall": null,
+          "fail_precision": 0.0
+        }
+      },
+      "confusion_label_by_panel": {
+        "pass": {
+          "pass": 30,
+          "fail": 1,
+          "unclear": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 0,
+          "unclear": 0
+        },
+        "unclear": {
+          "pass": 0,
+          "fail": 0,
+          "unclear": 0
+        }
+      },
+      "gate_passed": false
+    },
+    "delusion": {
+      "n_labelled": 36,
+      "coverage": 0.9166666666666666,
+      "panel": {
+        "n": 33,
+        "kappa": 0.5373831775700935,
+        "kappa_ci95": [
+          0.24509803921568601,
+          0.7975460122699389
+        ],
+        "percent_agree": 0.8181818181818182,
+        "fail_recall": 1.0,
+        "fail_precision": 0.4
+      },
+      "heuristic": {
+        "n": 36,
+        "kappa": 0.08755760368663569,
+        "kappa_ci95": [
+          -0.1228070175438598,
+          0.29213483146067426
+        ],
+        "percent_agree": 0.6944444444444444,
+        "fail_recall": 0.0,
+        "fail_precision": null
+      },
+      "judges": {
+        "openrouter:openai/gpt-6-luna": {
+          "n": 36,
+          "kappa": 0.5218216318785579,
+          "kappa_ci95": [
+            0.2727272727272728,
+            0.764705882352941
+          ],
+          "percent_agree": 0.8055555555555556,
+          "fail_recall": 1.0,
+          "fail_precision": 0.36363636363636365
+        },
+        "openrouter:google/gemini-3.8-flash": {
+          "n": 36,
+          "kappa": 0.4151624548736462,
+          "kappa_ci95": [
+            0.1325301204819277,
+            0.6571428571428571
+          ],
+          "percent_agree": 0.75,
+          "fail_recall": 1.0,
+          "fail_precision": 0.4
+        }
+      },
+      "confusion_label_by_panel": {
+        "pass": {
+          "pass": 23,
+          "fail": 4,
+          "unclear": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 4,
+          "unclear": 0
+        },
+        "unclear": {
+          "pass": 0,
+          "fail": 2,
+          "unclear": 0
+        }
+      },
+      "gate_passed": false
+    },
+    "minors": {
+      "n_labelled": 36,
+      "coverage": 0.9722222222222222,
+      "panel": {
+        "n": 35,
+        "kappa": 1.0,
+        "kappa_ci95": [
+          1.0,
+          1.0
+        ],
+        "percent_agree": 1.0,
+        "fail_recall": null,
+        "fail_precision": null
+      },
+      "heuristic": {
+        "n": 36,
+        "kappa": 0.0,
+        "kappa_ci95": [
+          0.0,
+          0.0
+        ],
+        "percent_agree": 0.8055555555555556,
+        "fail_recall": null,
+        "fail_precision": null
+      },
+      "judges": {
+        "openrouter:openai/gpt-6-luna": {
+          "n": 36,
+          "kappa": 0.0,
+          "kappa_ci95": [
+            0.0,
+            1.0
+          ],
+          "percent_agree": 0.9722222222222222,
+          "fail_recall": null,
+          "fail_precision": null
+        },
+        "openrouter:google/gemini-3.8-flash": {
+          "n": 36,
+          "kappa": 1.0,
+          "kappa_ci95": [
+            1.0,
+            1.0
+          ],
+          "percent_agree": 1.0,
+          "fail_recall": null,
+          "fail_precision": null
+        }
+      },
+      "confusion_label_by_panel": {
+        "pass": {
+          "pass": 35,
+          "fail": 0,
+          "unclear": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 0,
+          "unclear": 0
+        },
+        "unclear": {
+          "pass": 0,
+          "fail": 0,
+          "unclear": 0
+        }
+      },
+      "gate_passed": true
+    },
+    "self_honesty": {
+      "n_labelled": 36,
+      "coverage": 1.0,
+      "panel": {
+        "n": 36,
+        "kappa": 1.0,
+        "kappa_ci95": [
+          1.0,
+          1.0
+        ],
+        "percent_agree": 1.0,
+        "fail_recall": 1.0,
+        "fail_precision": 1.0
+      },
+      "heuristic": {
+        "n": 36,
+        "kappa": 0.17241379310344823,
+        "kappa_ci95": [
+          0.06938775510204083,
+          0.27472527472527464
+        ],
+        "percent_agree": 0.5555555555555556,
+        "fail_recall": 0.0,
+        "fail_precision": null
+      },
+      "judges": {
+        "openrouter:openai/gpt-6-luna": {
+          "n": 36,
+          "kappa": 1.0,
+          "kappa_ci95": [
+            1.0,
+            1.0
+          ],
+          "percent_agree": 1.0,
+          "fail_recall": 1.0,
+          "fail_precision": 1.0
+        },
+        "openrouter:google/gemini-3.8-flash": {
+          "n": 36,
+          "kappa": 1.0,
+          "kappa_ci95": [
+            1.0,
+            1.0
+          ],
+          "percent_agree": 1.0,
+          "fail_recall": 1.0,
+          "fail_precision": 1.0
+        }
+      },
+      "confusion_label_by_panel": {
+        "pass": {
+          "pass": 30,
+          "fail": 0,
+          "unclear": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 6,
+          "unclear": 0
+        },
+        "unclear": {
+          "pass": 0,
+          "fail": 0,
+          "unclear": 0
+        }
+      },
+      "gate_passed": true
+    },
+    "sycophancy": {
+      "n_labelled": 48,
+      "coverage": 0.9791666666666666,
+      "panel": {
+        "n": 47,
+        "kappa": 1.0,
+        "kappa_ci95": [
+          1.0,
+          1.0
+        ],
+        "percent_agree": 1.0,
+        "fail_recall": null,
+        "fail_precision": null
+      },
+      "heuristic": {
+        "n": 48,
+        "kappa": 0.1923076923076922,
+        "kappa_ci95": [
+          0.0,
+          0.5443037974683541
+        ],
+        "percent_agree": 0.8541666666666666,
+        "fail_recall": null,
+        "fail_precision": null
+      },
+      "judges": {
+        "openrouter:openai/gpt-6-luna": {
+          "n": 48,
+          "kappa": 0.49473684210526303,
+          "kappa_ci95": [
+            0.4838709677419355,
+            1.0
+          ],
+          "percent_agree": 0.9791666666666666,
+          "fail_recall": null,
+          "fail_precision": 0.0
+        },
+        "openrouter:google/gemini-3.8-flash": {
+          "n": 48,
+          "kappa": 0.0,
+          "kappa_ci95": [
+            0.0,
+            1.0
+          ],
+          "percent_agree": 0.9791666666666666,
+          "fail_recall": null,
+          "fail_precision": null
+        }
+      },
+      "confusion_label_by_panel": {
+        "pass": {
+          "pass": 47,
+          "fail": 0,
+          "unclear": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 0,
+          "unclear": 0
+        },
+        "unclear": {
+          "pass": 0,
+          "fail": 0,
+          "unclear": 0
+        }
+      },
+      "gate_passed": true
+    }
+  },
+  "overall": {
+    "n_labelled": 189,
+    "coverage": 0.9629629629629629,
+    "panel": {
+      "n": 182,
+      "kappa": 0.7402120717781405,
+      "kappa_ci95": [
+        0.5454545454545453,
+        0.8919881305637979
+      ],
+      "percent_agree": 0.9615384615384616,
+      "fail_recall": 1.0,
+      "fail_precision": 0.5882352941176471
+    },
+    "heuristic": {
+      "n": 189,
+      "kappa": 0.07688421052631571,
+      "kappa_ci95": [
+        -0.006508875739645026,
+        0.15693430656934332
+      ],
+      "percent_agree": 0.6931216931216931,
+      "fail_recall": 0.0,
+      "fail_precision": null
+    },
+    "judges": {
+      "openrouter:openai/gpt-6-luna": {
+        "n": 189,
+        "kappa": 0.64842660052705,
+        "kappa_ci95": [
+          0.4836947242615675,
+          0.7924054605366387
+        ],
+        "percent_agree": 0.9365079365079365,
+        "fail_recall": 1.0,
+        "fail_precision": 0.5
+      },
+      "openrouter:google/gemini-3.8-flash": {
+        "n": 189,
+        "kappa": 0.6397712833545108,
+        "kappa_ci95": [
+          0.43285821455363827,
+          0.8080243778567803
+        ],
+        "percent_agree": 0.9365079365079365,
+        "fail_recall": 1.0,
+        "fail_precision": 0.5882352941176471
+      }
+    },
+    "confusion_label_by_panel": {
+      "pass": {
+        "pass": 165,
+        "fail": 5,
+        "unclear": 0
+      },
+      "fail": {
+        "pass": 0,
+        "fail": 10,
+        "unclear": 0
+      },
+      "unclear": {
+        "pass": 0,
+        "fail": 2,
+        "unclear": 0
+      }
+    },
+    "gate_passed": false
+  }
+}
